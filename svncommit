@@ -1,0 +1,4 @@
+#!/bin/bash
+svn st | grep "\!" | awk '{system("svn delete " $2)}'
+svn st | grep "\?" | awk '{system("svn add " $2)}'
+ 

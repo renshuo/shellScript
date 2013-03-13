@@ -1,0 +1,4 @@
+#!/bin/sh
+
+mac "$1.ape" "$1.wav" -d
+flac -8 "$1.wav"

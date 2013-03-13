@@ -1,0 +1,50 @@
+#!/bin/sh
+TGT=dev18
+
+all(){
+stopAll
+ant
+up
+startAll
+test
+}
+up(){
+scp $VEGA_HOME/lib/vsr-esb.jar $TGT:vegahome/lib/
+}
+stopAll(){
+ssh $TGT "bash -c 'vtadmin stop project /Projects/ESB/initial'" &
+ssh $TGT "bash -c 'vtadmin stop project /Projects/ESBQueue_Exception/initial'" &
+ssh $TGT "bash -c 'vtadmin stop project /Projects/ESBQueue_ExManual/initial'" &
+ssh $TGT "bash -c 'vtadmin stop project /Projects/ESBQueue_Reverse/initial'" &
+ssh $TGT "bash -c 'vtadmin stop project /Projects/ESBQueue_Resend/initial'" &
+ssh $TGT "bash -c 'vtadmin stop project /Projects/ESBJMS_Log/initial'" &
+ssh $TGT "bash -c 'vtadmin stop project /Projects/ESBJMS_PCP_INF/initial'" &
+ssh $TGT "bash -c 'vtadmin stop project /Projects/ESBJMS_PCP_COM/initial'" &
+ssh $TGT "bash -c 'vtadmin stop project /Projects/ESBJMS_PCP_REAL/initial'" &
+ssh $TGT "bash -c 'vtadmin stop project /Projects/ESBJMS_TCBS/initial'" &
+ssh $TGT "bash -c 'vtadmin stop project /Projects/ESBJMS_PMS/initial'" &
+}
+
+startAll(){
+ssh $TGT "bash -c 'vtadmin start project /Projects/ESBQueue_Exception/initial'" &
+ssh $TGT "bash -c 'vtadmin start project /Projects/ESBQueue_ExManual/initial'" &
+ssh $TGT "bash -c 'vtadmin start project /Projects/ESBQueue_Reverse/initial'" &
+ssh $TGT "bash -c 'vtadmin start project /Projects/ESBQueue_Resend/initial'" &
+ssh $TGT "bash -c 'vtadmin start project /Projects/ESBJMS_Log/initial'" &
+ssh $TGT "bash -c 'vtadmin start project /Projects/ESBJMS_PCP_INF/initial'" &
+ssh $TGT "bash -c 'vtadmin start project /Projects/ESBJMS_PCP_COM/initial'" &
+ssh $TGT "bash -c 'vtadmin start project /Projects/ESBJMS_PCP_REAL/initial'" &
+ssh $TGT "bash -c 'vtadmin start project /Projects/ESBJMS_TCBS/initial'" &
+ssh $TGT "bash -c 'vtadmin start project /Projects/ESBJMS_PMS/initial'" &
+ssh $TGT "bash -c 'vtadmin start project /Projects/ESB/initial'"
+}
+
+test(){
+export DATA="$(cat /home/vega/ESB/esbDev/src/dev_xib/test/resource/request/test1.xml)"
+curl http://10.10.52.17:8788/ESB-initial/http -d "${DATA}"
+}
+
+refresh(){
+curl http://10.10.52.17:8788/ESB-initial/sys -d "<request action=\"refresh\" />"
+}
+$1

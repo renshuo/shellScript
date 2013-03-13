@@ -1,0 +1,798 @@
+
+Creating sequence ATTACHMENT_SEQUENCE
+=====================================
+
+
+Sequence created.
+
+
+Creating sequence BACKUP_SEQUENCE
+=================================
+
+
+Sequence created.
+
+
+Creating sequence CEB_M3O_ID
+============================
+
+
+Sequence created.
+
+
+Creating sequence CEB_TRANSACTION_ID
+====================================
+
+
+Sequence created.
+
+
+Creating sequence HIBERNATE_SEQUENCE
+====================================
+
+
+Sequence created.
+
+
+Creating sequence JOURNO
+========================
+
+
+Sequence created.
+
+
+Creating sequence NOTE_SEQUENCE
+===============================
+
+
+Sequence created.
+
+
+Creating sequence ORDER_SEQUENCE
+================================
+
+
+Sequence created.
+
+
+Creating sequence QUEST_SOO_AT_SEQUENCE
+=======================================
+
+
+Sequence created.
+
+
+Creating sequence SEPARATION_SEQUENCE
+=====================================
+
+
+Sequence created.
+
+
+Creating sequence SEQ_EBANK
+===========================
+
+
+Sequence created.
+
+
+Creating sequence SEQ_MIS_BOARD
+===============================
+
+
+Sequence created.
+
+
+Creating sequence SEQ_MIS_FORUM
+===============================
+
+
+Sequence created.
+
+
+Creating sequence SEQ_RELATE_ORDER
+==================================
+
+
+Sequence created.
+
+
+Creating sequence SEQ_TXN
+=========================
+
+
+Sequence created.
+
+
+Creating sequence SEQ_VBS_ORDER_ID
+==================================
+
+
+Sequence created.
+
+
+Creating sequence SEQ_VBS_SERVICE_FORM_INSTANCE
+===============================================
+
+
+Sequence created.
+
+
+Creating sequence SEQ_VPE_INSTANCE
+==================================
+
+
+Sequence created.
+
+
+Creating sequence SEQ_VSM_LOG_BEHAVIOR_ID
+=========================================
+
+
+Sequence created.
+
+
+Creating sequence SEQ_VSM_LOG_LOGIN_ID
+======================================
+
+
+Sequence created.
+
+
+Creating sequence SEQ_VTM_ACTIVITY
+==================================
+
+
+Sequence created.
+
+
+Creating sequence SEQ_VTM_ACTIVITY_INSTANCE
+===========================================
+
+
+Sequence created.
+
+
+Creating sequence SEQ_VTM_FORM_INS
+==================================
+
+
+Sequence created.
+
+
+Creating sequence SEQ_VTM_TASK
+==============================
+
+
+Sequence created.
+
+
+Creating sequence VITRIA$SEQID_SEQ
+==================================
+
+
+Sequence created.
+
+
+Creating sequence VITRIA$TABLEID_SEQ
+====================================
+
+
+Sequence created.
+
+
+Creating view DEPARTTASKBO
+==========================
+
+
+View created.
+
+
+Creating view DEPARTTASKBO_ALL
+==============================
+
+
+View created.
+
+
+Creating view DEPARTTASKBO_F
+============================
+
+
+View created.
+
+
+Creating view HISORDERBO
+========================
+
+
+View created.
+
+
+Creating view HISTASKHISTORYFORVIEWER_VIEW
+==========================================
+
+
+View created.
+
+
+Creating view MY_TABLES
+=======================
+
+
+View created.
+
+
+Creating view NOTIFICATIONBO
+============================
+
+
+View created.
+
+
+Creating view ORDERBO
+=====================
+
+
+View created.
+
+
+Creating view ORDERBO_ALL
+=========================
+
+
+View created.
+
+
+Creating view ORDERBO_CDC
+=========================
+
+
+View created.
+
+
+Creating view ORDERBO_F
+=======================
+
+
+View created.
+
+
+Creating view REPORT_CUSTOMER_ORDER_VIEW
+========================================
+
+
+View created.
+
+
+Creating view REPORT_CUSTOMER_ORDER_VIEW_BAK
+============================================
+
+
+View created.
+
+
+Creating view REPORT_ORDER_DESC
+===============================
+
+
+View created.
+
+
+Creating view REPORT_ORDER_RESULT
+=================================
+
+
+View created.
+
+
+Creating view REPORT_ORDER_TYPE_SUMMARY
+=======================================
+
+
+View created.
+
+
+Creating view REPORT_TASK
+=========================
+
+
+View created.
+
+
+Creating view REPORT_TASK_BAK
+=============================
+
+
+View created.
+
+
+Creating view REPORT_TASK_REMARKTYPE
+====================================
+
+
+View created.
+
+
+Creating view REPORT_TASK_REMARKTYPE_CDC
+========================================
+
+
+View created.
+
+
+Creating view TASKBO
+====================
+
+
+View created.
+
+
+Creating view TASKBO_0617
+=========================
+
+
+View created.
+
+
+Creating view TASKBO_0618
+=========================
+
+
+View created.
+
+
+Creating view TASKBO_ALL
+========================
+
+
+View created.
+
+
+Creating view TASKBO_ALL_BAK
+============================
+
+
+View created.
+
+
+Creating view TASKBO_F
+======================
+
+
+View created.
+
+
+Creating view TASKHISTORYFORHANDLER_VIEW
+========================================
+
+
+View created.
+
+
+Creating view TASKHISTORYFORHANDLER_VIEW_629
+============================================
+
+
+View created.
+
+
+Creating view TASKHISTORYFORHANDLER_VIEW_BAK
+============================================
+
+
+View created.
+
+
+Creating view TASKHISTORYFORVIEWER_VIEW
+=======================================
+
+
+View created.
+
+
+Creating view TASKHISTORYFORVIEWER_VIEW_BAK
+===========================================
+
+
+View created.
+
+
+Creating view TASKHISTORYFORVIEWER_VIEW_F
+=========================================
+
+
+View created.
+
+
+Creating view TASKHISTORYFORVIEWER_VIEW_NEW
+===========================================
+
+
+View created.
+
+
+Creating view VTM_FORM_INS_VIEW
+===============================
+
+
+View created.
+
+
+Creating function COUNTAREAORDERCOUNT
+=====================================
+
+
+Function created.
+
+
+Creating function COUNTSCOREORDERCOUNT
+======================================
+
+
+Warning: Function created with compilation errors.
+
+
+Creating function DATETOLONG
+============================
+
+
+Function created.
+
+
+Creating function EXPIRECACULATE
+================================
+
+
+Function created.
+
+
+Creating function EXTRACTAREA
+=============================
+
+
+Function created.
+
+
+Creating function EXTRACTNAME
+=============================
+
+
+Function created.
+
+
+Creating function GETLNNODE
+===========================
+
+
+Function created.
+
+
+Creating function GETNODELEVEL
+==============================
+
+
+Function created.
+
+
+Creating function GETROOTNODE
+=============================
+
+
+Function created.
+
+
+Creating function IDATTRIBUTEOFDOCELEMENTS
+==========================================
+
+
+Function created.
+
+
+Creating function ISTODAYVALID
+==============================
+
+
+Function created.
+
+
+Creating function LONGTODATE
+============================
+
+
+Function created.
+
+
+Creating function PARSERXML
+===========================
+
+
+Function created.
+
+
+Creating function REMAKECARD
+============================
+
+
+Function created.
+
+
+Creating function SPLIT_STR
+===========================
+
+
+Warning: Function created with compilation errors.
+
+
+Creating function SQUIRREL_GET_ERROR_OFFSET
+===========================================
+
+
+Function created.
+
+
+Creating function TIMETODAYHOURMIN
+==================================
+
+
+Function created.
+
+
+Creating function UNRECEIVEEXPIRECACULATE
+=========================================
+
+
+Warning: Function created with compilation errors.
+
+
+Creating function complementCard
+================================
+
+
+Warning: Function created with compilation errors.
+
+
+Creating procedure BACKUP1ORDER_BDS
+===================================
+
+
+Procedure created.
+
+
+Creating procedure BACKUP1ORDER_BDS_F
+=====================================
+
+
+Procedure created.
+
+
+Creating procedure BACKUP1ORDER_VPE
+===================================
+
+
+Procedure created.
+
+
+Creating procedure BACKUP1ORDER_VPE1
+====================================
+
+
+Procedure created.
+
+
+Creating procedure BACKUP1ORDER_VPE_F
+=====================================
+
+
+Procedure created.
+
+
+Creating procedure BACKUP1ORDER_VTM
+===================================
+
+
+Procedure created.
+
+
+Creating procedure BACKUP1ORDER_VTM_F
+=====================================
+
+
+Warning: Procedure created with compilation errors.
+
+
+Creating procedure CACULATE_GROUP_EXPIRE_TASK
+=============================================
+
+
+Procedure created.
+
+
+Creating procedure CACULATE_DEPART_EXPIRE_TASK
+==============================================
+
+
+Warning: Procedure created with compilation errors.
+
+
+Creating procedure CLEAR_VTM_TASK_3004
+======================================
+
+
+Procedure created.
+
+
+Creating procedure CREATEHISTABLE_BDS_T
+=======================================
+
+
+Procedure created.
+
+
+Creating procedure CREATEHISTABLE_VPE
+=====================================
+
+
+Procedure created.
+
+
+Creating procedure CREATEHISTABLE_VTM
+=====================================
+
+
+Procedure created.
+
+
+Creating procedure DELETE3004
+=============================
+
+
+Procedure created.
+
+
+Creating procedure EXECUTE_IMMEDIATE
+====================================
+
+
+Procedure created.
+
+
+Creating procedure INITCALENDAR
+===============================
+
+
+Procedure created.
+
+
+Creating procedure INSERTRECORED
+================================
+
+
+Procedure created.
+
+
+Creating procedure MAIN
+=======================
+
+
+Procedure created.
+
+
+Creating procedure ORDERBACKUP
+==============================
+
+
+Warning: Procedure created with compilation errors.
+
+
+Creating procedure PARSER_XML
+=============================
+
+
+Procedure created.
+
+
+Creating procedure P_REBUILD_ALL_INDEX
+======================================
+
+
+Procedure created.
+
+
+Creating procedure P_TEST
+=========================
+
+
+Procedure created.
+
+
+Creating procedure SEPARATE1ORDER_BDS
+=====================================
+
+
+Procedure created.
+
+
+Creating procedure SEPARATE1ORDER_VPE
+=====================================
+
+
+Procedure created.
+
+
+Creating procedure SEPARATE1ORDER_VPE_NEW
+=========================================
+
+
+Procedure created.
+
+
+Creating procedure SEPARATE1ORDER_VPE_NEW1
+==========================================
+
+
+Procedure created.
+
+
+Creating procedure SEPARATE1ORDER_VTM
+=====================================
+
+
+Procedure created.
+
+
+Creating procedure SEPARATE_FINISHED_ORDER
+==========================================
+
+
+Procedure created.
+
+
+Creating procedure SEPARATE_FINISHED_ORDER1
+===========================================
+
+
+Procedure created.
+
+
+Creating procedure SEPARATE_FINISHED_ORDER_BATCH
+================================================
+
+
+Procedure created.
+
+
+Creating procedure TEST
+=======================
+
+
+Procedure created.
+
+
+Creating procedure UP_CLEAR_ORDER_SEQUENCE
+==========================================
+
+
+Procedure created.
+
+
+Creating procedure UP_STATS_ORDERTYPE
+=====================================
+
+
+Procedure created.
+
+
+Creating procedure UP_STATS_REPLY_RESULT
+========================================
+
+
+Procedure created.
+
+
+Creating procedure WRITE_LOG
+============================
+
+
+Procedure created.
+

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+mv $1.cue $1.GBK.cue
+iconv -f GBK -t UTF-8 $1.GBK.cue > $1.cue
