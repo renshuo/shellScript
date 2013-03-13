@@ -9,8 +9,8 @@ export VEGA_HOME=$VEGA_BUILD_HOME/Build
 export PS1="\$"
 
 esb(){
-source jdk5.sh
-source bw451.sh
+source jdk5env.sh
+source bw451env.sh
 source $VEGA_BUILD_HOME/vegaEnv.sh
 cd $VEGA_BUILD_HOME/ESB/esbDev
 }
