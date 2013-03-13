@@ -1,4 +1,8 @@
 #!/bin/sh
+# convert a *.ape to *.flac
+# useage: 
+#	ape2flac image
+# will convert "image.ape" to "image.flac"
 
 mac "$1.ape" "$1.wav" -d
 flac -8 "$1.wav"
