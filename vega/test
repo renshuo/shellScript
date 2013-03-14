@@ -5,5 +5,8 @@ export DATA="$(cat ./src/dev_xib/test/resource/request/UnionAPI_req.xml)"
 curl http://10.10.52.17:8788/ESB-initial/http -d "${DATA}"
 }
 
-
+testUnionApi2(){
+export DATA="$(cat ./src/dev_xib/test/resource/request/UnionAPI_req2.xml)"
+curl http://10.10.52.17:8788/ESB-initial/http -d "${DATA}"
+}
 

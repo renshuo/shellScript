@@ -9,7 +9,7 @@ startAll
 test
 }
 up(){
-scp $VEGA_HOME/lib/vsr-esb.jar $TGT:vegahome/lib/
+scp ./build/lib/*.jar $TGT:vegahome/lib/
 }
 stopAll(){
 ssh $TGT "bash -c 'vtadmin stop project /Projects/ESB/initial'" &
