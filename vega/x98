@@ -1,32 +1,12 @@
 #!/bin/sh
-TGT=x98
+TGT=$(basename $0)
+IP=10.10.51.98
+ESBPORT=8788
 
-all(){
-stopAll
-ant
-up
-startAll
-test
-}
-up(){
-scp ./build/lib/*.jar $TGT:vegahome/lib/
-}
-stopAll(){
-ssh $TGT "bash -c 'vtadmin stop project /Projects/ESB/initial'" &
-ssh $TGT "bash -c 'vtadmin stop project /Projects/ESBJMS/initial'" &
-}
+PRJS="ESB ESBJMS"
 
-startAll(){
-ssh $TGT "bash -c 'vtadmin start project /Projects/ESBJMS/initial'" &
-ssh $TGT "bash -c 'vtadmin start project /Projects/ESB/initial'"
-}
 
-test(){
-export DATA="$(cat /home/vega/ESB/esbDev/src/dev_xib/test/resource/request/test1.xml)"
-curl http://10.10.51.98:8788/ESB-initial/http -d "${DATA}"
-}
-
-refresh(){
-curl http://10.10.51.98:8788/ESB-initial/sys -d "<request action=\"refreshAll\" />"
-}
-$1
+source xib
+CMD=$1
+shift
+$CMD $@

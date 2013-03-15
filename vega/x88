@@ -1,6 +1,6 @@
 #!/bin/sh
 TGT=$(basename $0)
-IP=10.10.51.99
+IP=10.10.51.88
 ESBPORT=8788
 
 PRJS="ESB ESBJMS"
