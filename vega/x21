@@ -1,0 +1,12 @@
+#!/bin/sh
+TGT=$(basename $0)
+IP=10.10.52.21
+ESBPORT=8788
+
+PRJS="ESB ESBJMS" 
+
+
+source xib
+CMD=$1
+shift
+$CMD $@
