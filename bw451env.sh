@@ -1,4 +1,5 @@
 source jdk5.sh
+echo "set bw451"
 export VITRIA=/home/bin/vitria/bw451
 source $VITRIA/bin/i386-linux/vtconfig.sh
 

@@ -1,3 +1,4 @@
+echo "set oracle env"
 export ORACLE_BASE=/home/backup/oracle
 export ORACLE_HOME=/home/backup/oracle/product/db
 export ORACLE_SID=orcl
