@@ -1,1 +1,1 @@
-jdk5env.sh
+jdk5.env
