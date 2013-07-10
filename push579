@@ -1,0 +1,5 @@
+#!/bin/sh
+( bash -c "adb push /home/backup/i579/ /sdcard/" ) 2> /home/backup/push579.log
+mv -f /home/backup/i579/music /home/backup/music
+#cat /home/backup/push579.log | grep "push:" | awk '{system("mv " $2 "/home/backup/music/")}'
+

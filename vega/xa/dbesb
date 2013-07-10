@@ -1,0 +1,2 @@
+db=$(basename $0)
+dbUrl=esb/esb@192.168.1.2/orcl

@@ -1,0 +1,49 @@
+work=$(basename $0)
+source vegaps
+workhome=$VEGA_BUILD_HOME/ESB/esbDev
+source jdk5env.sh
+source bw451env.sh
+source oracle.sh
+source $VEGA_BUILD_HOME/vegaEnv.sh
+source bwopt
+
+cd $workhome
+
+IPPORT=$IP:$ESBPORT
+VPEIPPORT=$IP:$VPEPORT
+TESTXMLHOME=/home/vega/ESB/esbDev/src/dev_xib/test/resource/request/
+VPETESTRC=/home/vega/VPE/vpeDev/src/dev_xib/test/resources/xml/
+
+getPTResult(){
+getPTLog
+orderNum="$(grep -c AAAAA mqTest.log)"
+DNAME=$1_$orderNum
+echo $DNAME
+mkdir $DNAME
+mv ./error.log $DNAME/
+mv ./mqTest.log $DNAME/
+mv ./ESBJMS.log $DNAME/
+}
+getPTLog(){
+scp $server:XIB_ESB/mqSend/log/error.log ./
+scp $server:XIB_ESB/mqSend/log/mqTest.log ./
+scp $server:Log1/ESBJMS.log ./
+}
+
+up(){
+scp $VEGA_HOME/lib/vsr-esb.jar $server:vegahome/lib/
+}
+
+refresh(){
+curl http://$IPPORT/ESB-initial/sys -d "<request action=\"refreshAll\" />"
+}
+
+sys(){
+export DATA="$(cat $1)"
+curl http://$IPPORT/ESB-initial/sys -d "${DATA}"
+}
+
+test(){
+export DATA="$(cat $1)"
+curl http://$IPPORT/ESB-initial/http -d "${DATA}"
+}

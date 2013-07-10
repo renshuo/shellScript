@@ -1,0 +1,12 @@
+#!/bin/sh
+# mv xxx.flac, xxx.cue to dir xxx
+prefix=$1
+for f in *.flac; 
+	do
+	export basen=$(basename "$f" | sed 's/\.flac//')
+	mkdir "$prefix$basen"
+	echo "mv $basen.flac to $prefix$basen/"
+	mv "$basen.flac" "$prefix$basen/img.flac"
+	echo "mv $basen.cue to $prefix$basen/"
+	mv "$basen.cue" "$prefix$basen/img.cue"
+	done

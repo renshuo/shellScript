@@ -1,0 +1,11 @@
+#!/bin/sh
+server=$(basename $0)
+source dblq2
+source vpe
+source vegaps
+
+
+IP=192.168.1.3
+
+
+

@@ -1,0 +1,4 @@
+#!/bin/sh
+source bw451env.sh
+bme
+ 

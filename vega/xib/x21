@@ -1,0 +1,13 @@
+#!/bin/sh
+server=$(basename $0)
+source db19dev
+source esb
+source vegaps
+
+
+IP=10.10.52.21
+ESBPORT=8788
+
+PRJS=(ESBJMS ESB)
+
+

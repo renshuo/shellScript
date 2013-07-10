@@ -1,0 +1,15 @@
+#!/bin/bash
+#shntool split -t "%n-%t" -o flac -f $1.cue $1.flac
+for i in *; do
+	echo $i
+	cd "$i"
+	cue2tracks -R -o "%N-%t" -i img.flac img.cue >> split.log
+	fn=$(cat split.log | grep " Track" | awk -F: 'END{print $1}')
+	mkdir "$fn"
+	mv split.log "$fn"
+	mv img.cue "$fn"
+	mv img.flac "$fn"
+	cd ..;
+	done;
+
+#cue2tracks -R -o "%N-%t" -i $1.flac $1.cue

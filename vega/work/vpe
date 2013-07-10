@@ -1,0 +1,24 @@
+work=$(basename $0)
+source vegaps
+workhome=$VEGA_BUILD_HOME/VPE/vpeDev
+source jdk5env.sh
+source bw451env.sh
+source oracle.sh
+source $VEGA_BUILD_HOME/vegaEnv.sh
+source bwopt
+PRJS=(VegaProcessEngine)
+
+cd $workhome
+
+up(){
+scp $VEGA_HOME/lib/vpeLib.jar $server:vegahome/lib/
+}
+
+call(){
+curl http://$IP:10086/VPEFront-initial/VPEFront -d "$1"
+}
+
+test(){
+DATA="$(cat $VPETESTRC/BomLib/saveInitDataToBomInstance.xml)"
+curl http://$VPEIPPORT/VegaProcessEngine-initial/vpe -d "${DATA}"
+}

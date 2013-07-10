@@ -1,0 +1,39 @@
+#!/bin/sh
+
+stop(){
+echo "try to stop project /Projects/$1/initial on $server"
+if [ $server = "local" ]; then
+	vtadmin stop project /Projects/$1/initial
+else
+	ssh $server "bash -c 'vtadmin stop project /Projects/$1/initial'" &
+fi
+}
+
+start(){
+echo "try to start project /Projects/$1/initial on $server"
+if [ $server = "local" ]; then
+	vtadmin start project /Projects/$1/initial
+else
+	ssh $server "bash -c 'vtadmin start project /Projects/$1/initial'" &
+fi
+}
+
+stopAll(){
+for i in ${PRJS}; do
+	stop $i
+done
+}
+
+startAll(){
+for i in $PRJS; do
+	start $i
+done
+}
+
+all(){
+stopAll
+ant
+up
+startAll
+test
+}

@@ -1,0 +1,2 @@
+db=$(basename $0)
+dbUrl=lq2/lq2@192.168.1.2/orcl

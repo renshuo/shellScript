@@ -1,0 +1,2 @@
+db=$(basename $0)
+dbUrl=vega/vega@localhost/orcl 
