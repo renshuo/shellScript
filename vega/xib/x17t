@@ -1,13 +1,11 @@
 #!/bin/sh
 server=$(basename $0)
-source db19verify
-source vegaps
-
-
 IP=10.10.52.17
 ESBPORT=8001
 VPEPORT=19830
-
 PRJS=(ESB_EX_Scheduler ESB) 
+
+source db19verify
+source vegaps
 
 

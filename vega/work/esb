@@ -35,6 +35,7 @@ scp $VEGA_HOME/lib/vsr-esb.jar $server:vegahome/lib/
 }
 
 refresh(){
+echo "call http://$IPPORT/ESB-initial/sys with action: refreshAll"
 curl http://$IPPORT/ESB-initial/sys -d "<request action=\"refreshAll\" />"
 }
 
