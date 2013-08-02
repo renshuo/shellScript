@@ -31,7 +31,9 @@ scp $server:Log1/ESBJMS.log ./
 }
 
 up(){
-scp $VEGA_HOME/lib/vsr-esb.jar $server:vegahome/lib/
+if [ $server != "local" ]; then
+	scp $VEGA_HOME/lib/vsr-esb.jar $server:vegahome/lib/
+fi
 }
 
 refresh(){
