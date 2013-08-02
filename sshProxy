@@ -1,0 +1,1 @@
+ssh -D 7070 -p 22 -qfnN xhpfreet@cnssh.xhpfree.tk
