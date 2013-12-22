@@ -1,0 +1,29 @@
+#!/bin/sh
+
+# set env, execute "source icop"
+setenv(){
+export JT_HOME=/home/ICOP/build
+cd /home/ICOP
+source jdk6env.sh
+source mariadb.sh
+
+alias start=/home/ICOP/tomcat/bin/startup.sh
+alias stop=/home/ICOP/tomcat/bin/shutdown.sh
+echo "set ICOP env success: "$JT_HOME
+}
+
+
+if [ -z $1 ];then
+    setenv
+else
+if [ -z $JT_HOME ]; then
+    setenv
+fi
+    case $1 in
+	"start")
+		echo "start icop?"
+	;;
+    esac
+fi	
+
+

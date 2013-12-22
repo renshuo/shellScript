@@ -1,3 +1,4 @@
 #!/bin/sh
-/home/bin/soapui/soapui-4.5.1/bin/soapui.sh
+cd /home/bin/soapui/soapui
+./bin/soapui.sh
 
