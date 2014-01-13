@@ -1,4 +1,0 @@
-#!/bin/sh
-source jdk7.env
-cd /home/bin/eclipse/eclipse/
-./eclipse
