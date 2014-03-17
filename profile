@@ -14,3 +14,8 @@ alias ec='emacsclient -nw $@'
 
 export PS1="\$ "
 
+
+export EDITOR="emacsclient -nw"
+
+
+
