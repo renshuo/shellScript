@@ -1,0 +1,7 @@
+# put to /etc/udev/rules.d/
+ACTION=="add", DEVPATH=="/module/windrvr6", RUN+="/bin/rm -f /dev/windrvr6"
+ACTION=="add", DEVPATH=="/module/windrvr6", PROGRAM="/bin/grep windrvr6 /proc/devices" RUN+="/bin/mknod -m 0666 /dev/windrvr6 c %c{1} 0"
+
+ACTION=="remove", DEVPATH=="/module/windrvr6", RUN+="/bin/rm -f /dev/windrvr6"
+
+
