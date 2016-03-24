@@ -1,0 +1,3 @@
+#!/bin/sh
+source /home/bin/freescale/QorIQ-SDK-V1.8-20150619-yocto/build_t2080rdb-64b_release/SOURCE_THIS
+

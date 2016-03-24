@@ -1,0 +1,10 @@
+#!/bin/sh
+source jdk8.env
+
+#export GTK_RC_FILES=/etc/gtk/gtkrc:/home/sren/.gtkrc:/home/sren/.kde4/share/config/gtkrc
+#export GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/sren/.gtkrc-2.0:/home/sren/.gtkrc-2.0-kde4:/home/sren/.kde4/share/config/gtkrc-2.0
+export SWT_GTK3=0
+
+cd /home/bin/eclipse/eclipse-jee/
+#./eclipse -Xms512m -Xmx1024m -XX:PermSize=128M -XX:MaxPermSize=196M -Xverify:none -XX:+UseParallelGC -Dorg.eclipse.swt.browser.XULRunnerPath=/usr/lib/xulrunner-28.0
+./eclipse

@@ -1,0 +1,4 @@
+#!/bin/sh
+source jdk8env.sh
+echo "start java program: "$*
+java -jar $*

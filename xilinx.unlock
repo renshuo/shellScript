@@ -1,0 +1,5 @@
+setmode -bs
+cleancablelock
+setcable -p auto
+quit
+

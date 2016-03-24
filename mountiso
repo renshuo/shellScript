@@ -1,0 +1,7 @@
+#!/bin/sh
+
+export isofile=$1
+export target=$2
+
+sudo mount -o loop $isofile $target
+

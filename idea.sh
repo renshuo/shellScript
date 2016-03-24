@@ -1,5 +1,5 @@
 #!/bin/sh
-#source bw451env.sh
-source jdk7env.sh
-export JT_HOME=/home/ICOP/build
-/usr/bin/idea.sh
+source /home/bin/0bin/jdk8
+cd /home/bin/idea/idea/bin
+./idea.sh "$@"
+

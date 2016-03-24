@@ -1,21 +1,34 @@
 #!/bin/sh
-export LCD=/home/bin/0bin
-export PATH=$LCD/games/:$PATH:./
 
+#export PATH="/home/bin/0bin:./:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/usr/local/games:/usr/games"
 
-export PATH=$LCD/vega:$LCD/vega/work:$LCD/vega/xib:$LCD/vega/xa:$PATH
-
-export VEGA_BUILD_HOME=/home/vega 
-export VEGA_HOME=$VEGA_BUILD_HOME/Build
-export VEGA_DATA_ARCH=$VEGA_HOME/upload
-
+#alias ..="cd .."
+#alias ../..="cd ../.."
 alias ll='ls -l $@'
+
 alias ec='emacsclient -nw $@'
 
+alias gits="git status ./"
+
+
+#export PS1="%K{blue}%n@%m%k %B%F{cyan}%(4~|...|)%3~%F{white} %# %b%f%k"
 export PS1="\$ "
 
+cd /home
 
-export EDITOR="emacsclient -nw"
+export EDITOR="emacsclient "
 
+#xmodmap /home/bin/0bin/xmodmaprc
+
+# c compile 
+alias CC="gcc -std=c99"
+
+
+XMODIFIERS="@im=fcitx"
+XIM=fcitx
+XIM_PROGRAM=fcitx
+QT_IM_MODULE=fcitx
+GTK_IM_MODULE=fcitx
+GTK3_IM_MODULE=fcitx
 
 

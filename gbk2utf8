@@ -1,0 +1,6 @@
+#!/bin/sh
+echo $1
+mkdir 1a -p
+find $1 -exec iconv -f GBk -t UTF-8 {} -o ./1a/{} \;
+
+
