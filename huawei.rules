@@ -1,0 +1,4 @@
+# put this file to /etc/udev/rules.d for auto enable internet of huawei E353 when usb connected.
+
+ATTRS{idVendor}=="12d1", ATTRS{idProduct}=="1f01", MODE="666"
+SUBSYSTEMS=="usb", ACTION=="add", ATTRS{idVendor}=="12d1", ATTRS{idProduct}=="1f01", RUN+="/usr/sbin/usb_modeswitch -c /etc/usb_modeswitch.d/huawei.conf"

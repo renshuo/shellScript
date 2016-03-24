@@ -1,0 +1,3 @@
+#!/bin/sh
+usb_modeswitch -c /etc/usb_modeswitch.d/huawei.conf
+
