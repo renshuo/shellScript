@@ -1,4 +1,0 @@
-#!/bin/sh
-source jdk7env.sh
-cd /home/bin/vuze/vuze
-./vuze 
