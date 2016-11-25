@@ -1,5 +1,0 @@
-#!/bin/sh
-source jdk8.env
-cd /home/bin/yed/yed/
-java -jar ./yed.jar
-
