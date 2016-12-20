@@ -5,18 +5,16 @@
 #alias ..="cd .."
 #alias ../..="cd ../.."
 alias ll='ls -l $@'
-
 alias ec='emacsclient -nw $@'
-
 alias gits="git status ./"
 
+export EDITOR="emacsclient "
 
 #export PS1="%K{blue}%n@%m%k %B%F{cyan}%(4~|...|)%3~%F{white} %# %b%f%k"
 export PS1="\$ "
 
 cd /home
 
-export EDITOR="emacsclient "
 
 #xmodmap /home/bin/0bin/xmodmaprc
 
@@ -31,4 +29,7 @@ QT_IM_MODULE=fcitx
 GTK_IM_MODULE=fcitx
 GTK3_IM_MODULE=fcitx
 
+source texlive.env
+source jdk8.env
+source gradle.env
 
