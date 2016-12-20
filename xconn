@@ -1,1 +1,1 @@
-Xephyr -screen 1280x800 -query 192.169.1.254 :1
+Xephyr -screen 1280x800 -query 192.169.1.254 :1 -from 192.169.1.217
