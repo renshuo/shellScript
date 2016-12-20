@@ -1,5 +1,5 @@
 #!/bin/sh
-route -v del default dev eno1
+sudo route -v del default dev eno1
 # 当连接手机上网后，由于eno1自己配置有网关，且优先于手机网络，所以会导致无法通过手机上网（路由被指向内网的254），所以，需要删除eno1的路由，这样内外网可以同时使用。
 # 目前这个问题影响的程序只有kde telepathy
 
