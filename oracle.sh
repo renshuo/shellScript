@@ -1,6 +1,6 @@
 echo "set oracle env"
 export ORACLE_BASE=/home/bin/oracle/oracle
-export ORACLE_HOME=/home/bin/oracle/oracle/product/11.2.0/dbhome
+export ORACLE_HOME=/home/bin/oracle/oracle/product/11.2.0/dbhome_1
 export ORACLE_SID=orcl
 export ORACLE_INVENTORY=/home/bin/oracle/oracle/inventory
 export ORACLE_BASE ORACLE_SID ORACLE_HOME
@@ -11,4 +11,8 @@ export VISUAL=vi
 
 alias sqlplus="rlwrap sqlplus"
 alias rman="rlwrap rman"
+
+
+export LC_ALL=en_US.UTF-8
+# for chinese char error
 

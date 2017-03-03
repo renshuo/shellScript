@@ -19,7 +19,7 @@ case "$1" in
         echo -n "Starting Oracle: "
         $ORACLE_HOME/bin/lsnrctl start
         $ORACLE_HOME/bin/dbstart $ORACLE_HOME
-        touch /home/backup/oracle/oracle.lock
+        touch $ORACLE_HOME/oracle.lock
         echo "OK"
         ;;
     stop)
@@ -27,7 +27,7 @@ case "$1" in
         echo -n "Shutdown Oracle: "
         $ORACLE_HOME/bin/lsnrctl stop
         $ORACLE_HOME/bin/dbshut $ORACLE_HOME
-        rm -f /home/backup/oracle/oracle.lock
+        rm -f $ORACLE_HOME/oracle.lock
         echo "OK"
         ;;
     reload|restart)
