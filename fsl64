@@ -1,7 +1,0 @@
-#!/bin/sh
-export FSL="/home/bin/freescale/QorIQ-SDK-V1.6-20140619-yocto"
-cd $FSL
-#source fsl-setup-poky -m t4240qds-64b
-source /home/backup/.bin/freescale/QorIQ-SDK-V1.6-20140619-yocto/build_t4240qds-64b_release/SOURCE_THIS
-
-

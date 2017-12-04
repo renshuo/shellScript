@@ -1,2 +1,0 @@
-db=$(basename $0)
-dbUrl=releaseAcc/releaseAcc@192.168.1.2/orcl

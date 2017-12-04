@@ -1,4 +1,0 @@
-#!/bin/sh
-cd /home/bin/soapui/soapui
-./bin/soapui.sh
-

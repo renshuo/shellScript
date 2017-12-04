@@ -1,2 +1,0 @@
-db=$(basename $0)
-dbUrl="esbdev/esbdev1234@10.10.51.219/ora11g"

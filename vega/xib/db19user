@@ -1,2 +1,0 @@
-db=$(basename $0)
-dbUrl=esbuser/esbuser1234@10.10.52.19/ora11g
