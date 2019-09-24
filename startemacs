@@ -1,4 +1,4 @@
 #!/bin/sh
 export HOME=/home/bin/emacs
 export SPACEMACSDIR=~/emacsren.d
-emacs $@
+emacs --debug-init $@
