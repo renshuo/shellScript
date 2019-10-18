@@ -1,7 +1,11 @@
 #!/bin/sh
 
-export XBIN=/home/bin/0bin
+# cd /home/work/.bin/
+export XBIN=`dirname $0`
 export PATH=$XBIN:$PATH
+echo "update path: "$PATH
+
+
 eval "$(fasd --init auto)"
 alias ..="cd .."
 alias ...="cd ../.."
@@ -12,23 +16,14 @@ alias CC="gcc -std=c99"
 export EDITOR="emacsclient "
 export PS1="\$ "
 
-source $XBIN/node.env
-source $XBIN/jdk8.env
-source $XBIN/gradle.env
+source jdk8.env
+source gradle.env
 
-#XMODIFIERS="@im=fcitx"
-#XIM=fcitx
-#XIM_PROGRAM=fcitx
-#QT_IM_MODULE=fcitx
-#GTK_IM_MODULE=fcitx
-#GTK3_IM_MODULE=fcitx
+source $XBIN/config/fcitx.env
 
-source /home/bin/0bin/jdk11.env
-#source /home/bin/0bin/node.env
-#source /home/bin/0bin/gradle.env
-#source /home/bin/0bin/scala.env
-source /home/bin/0bin/texlive.env
+source jdk11.env
+#source scala.env
+source texlive.env
 export IDEA_JDK=/home/bin/java/jdk11
 
-
-cd /home
+cd /home/work

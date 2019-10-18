@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /home/bin/storeResend-1.0/
+./bin/storeResend

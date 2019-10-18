@@ -1,0 +1,3 @@
+#!/bin/sh
+cd /home/bin/SXEarth3.7.0_64bit/
+./bin/SXEarth.sh

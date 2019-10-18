@@ -1,4 +1,3 @@
 #!/bin/sh
-export HOME=/home/bin/emacs
-export SPACEMACSDIR=~/emacsren.d
+source emacs.env
 emacsclient -ca "" $@

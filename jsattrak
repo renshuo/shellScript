@@ -1,0 +1,4 @@
+#!/bin/sh
+cd /home/bin/jSatTrak
+cd JSatTrak_v4_1_11_bin/JSatTrak_v4_1_11
+java -jar JSatTrak.jar
