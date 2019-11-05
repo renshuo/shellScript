@@ -1,3 +1,5 @@
 #!/bin/sh
-source emacs.env
-emacs --daemon 
+echo "start emacs server"
+source /home/bin/0bin/emacs.env
+emacs --daemon
+

@@ -11,6 +11,7 @@ export PATH=$PATH:$XBIN
 export EDITOR="emacsclient "
 
 source $XBIN/gradle.env
+source $XBIN/jdk.env
 source $XBIN/config/fcitx.env
 source $XBIN/texlive.env
 
