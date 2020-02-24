@@ -1,0 +1,18 @@
+#!/bin/sh
+
+echo "use passwd: $1"
+for i in *.rar
+do 
+	  unrar x -p$1 "$i"
+done
+
+for j in */
+do
+    zip -r "${j%%/*}.zip" "$j"
+done
+
+mkdir delete
+mv *.rar delete/
+mv */ delete/
+
+
