@@ -182,7 +182,7 @@ exec --no-startup-id yakuake
 for_window [class="yakuake"] floating enable
 exec --no-startup-id nm-applet
 exec --no-startup-id picom -b -c --config $HOME/.config/i3/picom.conf &
-exec --no-startup-id polybar -r -c $HOME/.config/i3/polybar.conf example
+exec --no-startup-id polybar -r -c $HOME/.config/i3/polybar-space.conf example
 
 bindsym Control+F2 echo "test"
 #bindsym Control+a exec konsole --workdir "/home/star"
