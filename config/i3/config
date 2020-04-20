@@ -17,9 +17,8 @@ font pango:Source Code Pro Medium, 思源黑体 CN, Icons 12
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-#bindsym Control+l exec loginctl lock-session # failed?
-bindsym $mod+l exec xss-lock
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -i /home/sren/.config/i3/background-lock.png -t &
+bindsym $mod+l exec xset s activate
 
 # Use pactl to adjust volume in PulseAudio.
 # set $refresh_i3status killall -SIGUSR1 i3status
@@ -31,8 +30,8 @@ bindsym $mod+Insert exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ togg
 floating_modifier $mod
 # Use Mouse+$mod to drag floating windows to their wanted position
 bindsym $mod+Escape kill
-bindsym F2 exec --no-startup-id rofi -show run
-#bindsym Shift+F2 exec kdesu dmenu_run
+bindsym $mod+z exec --no-startup-id rofi -show run
+bindsym $mod+Shift+z exec --no-startup-id kdesu konsole
 bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym Print exec spectacle -r
 bindsym $mod+Return exec i3-sensible-terminal
@@ -174,7 +173,7 @@ mode "work" {
 # 基本环境
 
 ##壁纸
-exec --no-startup-id feh --bg-scale "$HOME/Nutstore Files/我的坚果云/0_wallpic/圣女之歌_1.jpg"
+exec --no-startup-id feh --bg-scale "$HOME/.config/i3/background.png"
 exec --no-startup-id /home/bin/0bin/config/screenConfig.sh
 
 
