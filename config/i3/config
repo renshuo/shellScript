@@ -12,7 +12,7 @@
 set $mod Mod4
 
 ## 字体配置，包括标题栏，i3bar
-font pango:Source Code Pro Medium, 思源黑体 CN, Icons 12
+font pango:Icons Regular, Material Icons Regular, 思源黑体 CN Regular 12
 # font pango:adobe source han sans 12
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
@@ -165,7 +165,7 @@ bindsym $mod+r mode "resize"
 ## 工作模式
 bindsym $mod+x mode "work"
 mode "work" {
-     bindsym $mod+x exec konsole /home/start/project/x129/
+     bindsym $mod+x mode "default" ; exec konsole /home/start/project/x129/
      bindsym Escape mode "default"
      bindsym Return mode "default"
 }
