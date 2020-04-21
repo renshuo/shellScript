@@ -22,10 +22,14 @@ bindsym $mod+l exec xset s activate
 
 # Use pactl to adjust volume in PulseAudio.
 # set $refresh_i3status killall -SIGUSR1 i3status
-bindsym $mod+Home exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym $mod+End exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym $mod+Insert exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 # bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+## brightness      # depends on acpilight
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 
 floating_modifier $mod
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -161,6 +165,11 @@ bindsym $mod+r mode "resize"
 #     }
 # }
 
+bindsym $mod+F12 mode "fnx"
+mode "fnx" {
+     bindsym Escape mode "default"
+     bindsym Return mode "default"
+}
 
 ## 工作模式
 bindsym $mod+x mode "work"
