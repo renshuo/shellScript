@@ -41,6 +41,7 @@ floating_modifier $mod
 # Use Mouse+$mod to drag floating windows to their wanted position
 bindsym $mod+Escape kill
 bindsym $mod+z exec --no-startup-id rofi -show run
+bindsym $mod+Tab exec --no-startup-id rofi -show window
 bindsym Print exec spectacle -r
 bindsym $mod+Return exec konsole --hide-menubar
 bindsym $mod+Shift+Return exec --no-startup-id kdesu konsole --hode-menubar
