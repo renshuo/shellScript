@@ -127,8 +127,9 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+Escape exec "i3-nagbar -t warning -m 'Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # scratchpad
-bindsym $mod+Shift+c move scratchpad
-bindsym $mod+c scratchpad show
+bindsym $mod+grave move scratchpad
+bindsym grave scratchpad show
+# grave is `
 
 # resize window (you can also use the mouse for that)
 set $resize_mode "resize: Left/Right: 宽度， Up/Down：高度； M+Left/Right/Up/Down: 移动；Return/Esc,M+r：退出"
