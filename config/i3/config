@@ -41,6 +41,7 @@ floating_modifier $mod
 # Use Mouse+$mod to drag floating windows to their wanted position
 bindsym $mod+Escape kill
 bindsym $mod+z exec --no-startup-id rofi -show run
+bindsym $mod+Tab exec --no-startup-id rofi -show window
 bindsym Print exec spectacle -r
 bindsym $mod+Return exec konsole --hide-menubar
 bindsym $mod+Shift+Return exec --no-startup-id kdesu konsole --hode-menubar
@@ -169,16 +170,19 @@ mode $resize_mode {
 #     }
 # }
 
-## 工作模式
-set $work_mode "work: (x)konsole to x129 | (3)konsole to x33"
-bindsym $mod+x mode $work_mode
-mode $work_mode {
-     bindsym x exec konsole --workdir /home/star/project/x129/; mode "default"
-     bindsym 3 exec konsole --workdir /home/star/project/p33/; mode "default"
+## C+x mode
+set $xmode "xmode: (x)emacs (e)dolphin (i)IDEA (f)firefox (g)chromium"
+bindsym $mod+x mode $xmode
+mode $xmode {
+     bindsym x mode "default"; exec startemacs
+     bindsym e mode "default"; exec dolphin
+     bindsym i mode "default"; exec idea
+     bindsym f mode "default"; exec firefox
+     bindsym g mode "default"; exec chromium
      bindsym Escape mode "default"
      bindsym Return mode "default"
-}
 
+}
 # 基本环境
 
 ##壁纸
@@ -198,4 +202,3 @@ exec --no-startup-id polybar -r -c $HOME/.config/i3/polybar-space.conf top
 
 ## 窗口定制
 for_window [class="Steam"] floating enable
-
