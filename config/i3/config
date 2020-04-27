@@ -69,7 +69,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+#bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -130,6 +130,7 @@ bindsym $mod+Shift+Escape exec "i3-nagbar -t warning -m 'Do you really want to e
 # scratchpad
 bindsym $mod+grave move scratchpad
 bindsym grave scratchpad show
+
 # grave is `
 
 # resize window (you can also use the mouse for that)
@@ -198,7 +199,10 @@ for_window [class="yakuake"] floating enable
 exec --no-startup-id nm-applet
 exec --no-startup-id picom -b -c --config $HOME/.config/i3/picom.conf &
 exec --no-startup-id polybar -r -c $HOME/.config/i3/polybar-space.conf top
+exec --no-startup-id pasystray &
 # dunst for system notify
+
+bindsym $mod+s tdrop -ma -w -4 -y 100 -s dropdown konsole
 
 ## 窗口定制
 for_window [class="Steam"] floating enable
