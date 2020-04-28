@@ -203,7 +203,10 @@ exec --no-startup-id pasystray &
 exec --no-startup-id exec /home/sren/下载/scrapbee/scrapbee_backend &
 # dunst for system notify
 
-bindsym $mod+s tdrop -ma -w -4 -y 100 -s dropdown konsole
+bindsym F2 exec --no-startup-id tdrop -ma -w 100% -h 100% dolphin &
+bindsym F3 exec --no-startup-id source emacs.env && tdrop -ma -w 100% -h 100% "emacs"
+#bindsym $mod+c exec --no-startup-id tdrop -ma -w 100% -h 100% konsole &
+bindsym F4 exec --no-startup-id tdrop hide_all
 
 ## 窗口定制
 for_window [class="Steam"] floating enable
