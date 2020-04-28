@@ -200,6 +200,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id picom -b -c --config $HOME/.config/i3/picom.conf &
 exec --no-startup-id polybar -r -c $HOME/.config/i3/polybar-space.conf top
 exec --no-startup-id pasystray &
+exec --no-startup-id exec /home/sren/下载/scrapbee/scrapbee_backend &
 # dunst for system notify
 
 bindsym $mod+s tdrop -ma -w -4 -y 100 -s dropdown konsole
