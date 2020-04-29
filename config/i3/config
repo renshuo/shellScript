@@ -194,20 +194,19 @@ exec --no-startup-id /home/bin/0bin/config/screenConfig.sh
 
 ## 自启动
 exec --no-startup-id fcitx 
-exec --no-startup-id yakuake
+# exec --no-startup-id yakuake
 for_window [class="yakuake"] floating enable
 exec --no-startup-id nm-applet
 exec --no-startup-id picom -b -c --config $HOME/.config/i3/picom.conf &
 exec --no-startup-id polybar -r -c $HOME/.config/i3/polybar-space.conf top
 exec --no-startup-id pasystray &
-#exec --no-startup-id exec /home/sren/下载/scrapbee/scrapbee_backend &
 # dunst for system notify
 
-bindsym F1 exec --no-startup-id tdrop -ma -w 100% -h 100% sakura -f "Source Code Pro Regular 10"
+bindsym F1 exec --no-startup-id tdrop -ma -w 100% -h 100% konsole --hide-menubar
 bindsym F2 exec --no-startup-id source emacs.env && tdrop -ma -w 100% -h 100% "emacs"
 bindsym F3 exec --no-startup-id tdrop -ma -w 100% -h 100% dolphin
 bindsym F4 exec --no-startup-id tdrop hide_all
-bindsym $mod+F1 sakura -f "Source Code Pro Regular 18"
+# bindsym $mod+F1 exec --no-startup-id xrdb -load ~/.Xresources && urxvt
 
 ## 窗口定制
 for_window [class="Steam"] floating enable
