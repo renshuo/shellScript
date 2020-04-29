@@ -200,13 +200,15 @@ exec --no-startup-id nm-applet
 exec --no-startup-id picom -b -c --config $HOME/.config/i3/picom.conf &
 exec --no-startup-id polybar -r -c $HOME/.config/i3/polybar-space.conf top
 exec --no-startup-id pasystray &
-exec --no-startup-id exec /home/sren/下载/scrapbee/scrapbee_backend &
+#exec --no-startup-id exec /home/sren/下载/scrapbee/scrapbee_backend &
 # dunst for system notify
 
-bindsym F2 exec --no-startup-id tdrop -ma -w 100% -h 100% dolphin &
-bindsym F3 exec --no-startup-id source emacs.env && tdrop -ma -w 100% -h 100% "emacs"
-#bindsym $mod+c exec --no-startup-id tdrop -ma -w 100% -h 100% konsole &
+bindsym F1 exec --no-startup-id tdrop -ma -w 100% -h 100% sakura -f "Source Code Pro Regular 10"
+bindsym F2 exec --no-startup-id source emacs.env && tdrop -ma -w 100% -h 100% "emacs"
+bindsym F3 exec --no-startup-id tdrop -ma -w 100% -h 100% dolphin
 bindsym F4 exec --no-startup-id tdrop hide_all
+bindsym $mod+F1 sakura -f "Source Code Pro Regular 18"
 
 ## 窗口定制
 for_window [class="Steam"] floating enable
+
