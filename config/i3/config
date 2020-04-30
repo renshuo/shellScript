@@ -199,9 +199,9 @@ exec --no-startup-id polybar -r -c $HOME/.config/i3/polybar-space.conf top
 exec --no-startup-id pasystray &
 # dunst for system notify
 
-bindsym F1 exec --no-startup-id tdrop -ma -w 100% -h 100% konsole --hide-menubar
-bindsym F2 exec --no-startup-id source emacs.env && tdrop -ma -w 100% -h 100% "emacs"
-bindsym F3 exec --no-startup-id tdrop -ma -w 100% -h 100% dolphin
+bindsym F1 exec --no-startup-id tdrop -ma -w -2 -x 2 -h -24 konsole --hide-menubar
+bindsym F2 exec --no-startup-id source emacs.env && tdrop -ma -w -2 -x 2 -h -24 "emacs"
+bindsym F3 exec --no-startup-id tdrop -ma -w -2 -x 2 -h -24 dolphin
 bindsym F4 exec --no-startup-id tdrop hide_all
 # bindsym $mod+F1 exec --no-startup-id xrdb -load ~/.Xresourc1es && urxvt
 
