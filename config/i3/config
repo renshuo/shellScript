@@ -130,8 +130,8 @@ bindsym $mod+Shift+Escape exec "i3-nagbar -t warning -m 'Do you really want to e
 
 # scratchpad
 bindsym $mod+grave move scratchpad
-bindsym grave scratchpad show
-
+bindsym Pause scratchpad show
+# bindsym grave scratchpad show
 # grave is `
 
 # resize window (you can also use the mouse for that)
@@ -208,7 +208,7 @@ exec --no-startup-id polybar -r -c $HOME/.config/i3/polybar-space.conf top
 exec --no-startup-id pasystray &
 # dunst for system notify
 
-bindsym F1 exec --no-startup-id tdrop -ma -w -2 -x 2 -h -24 konsole --hide-menubar
+bindsym F1 exec --no-startup-id tdrop -ma -w -2 -x 2 -h -24 konsole --hide-menubar -e "tmux"
 bindsym F2 exec --no-startup-id source emacs.env && tdrop -ma -w -2 -x 2 -h -24 "emacs"
 bindsym F3 exec --no-startup-id tdrop -ma -w -2 -x 2 -h -24 dolphin
 bindsym F4 exec --no-startup-id tdrop hide_all
