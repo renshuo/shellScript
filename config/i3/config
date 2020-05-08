@@ -219,4 +219,5 @@ for_window [class="Steam"] floating enable
 for_window [class="ksysguard"] floating enable
 for_window [title="输入法配置"] floating enable
 for_window [title="fcitx"] floating enable
-
+for_window [class="kmenuedit"] floating enable
+for_window [class="kmenuedit"] move container to workspace number $ws2
