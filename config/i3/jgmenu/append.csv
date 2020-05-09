@@ -1,0 +1,23 @@
+@search,,3,3,150,20,2,left,top,auto,#000000 0,Type to Search
+##
+
+# item0.0
+# item0.1
+# submenu1,^checkout(1)
+^sep()
+电源,^root(power)
+
+^tag(1)
+item1.0
+item1.1
+
+
+^tag(power)
+关机,"""i3exit shutdown""",system-shutdown
+重启,"""i3exit reboot""",system-reboot
+退出,"""i3exit logout""",system-log-out
+休眠,"""i3exit hibernate""", system-suspend-hibernate
+挂起,"""i3exit suspend""", system-suspend
+锁屏,"""i3exit lock""",system-lock-screen
+切换用户,"""i3exit switch_user""",system-switch-user
+
