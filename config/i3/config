@@ -205,6 +205,7 @@ exec --no-startup-id fcitx
 for_window [class="yakuake"] floating enable
 exec --no-startup-id picom -b -c --config $HOME/.config/i3/picom.conf &
 exec --no-startup-id polybar -r -c $HOME/.config/i3/polybar-space.conf top
+exec --no-startup-id jgmenu_run
 # exec --no-startup-id pasystray &
 # dunst for system notify
 
