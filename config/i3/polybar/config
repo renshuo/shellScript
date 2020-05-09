@@ -7,7 +7,7 @@ primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
 
-[bar/top]
+[bar/polybar]
 ;; monitor = DP-0
 width = 100%
 height = 24
@@ -15,7 +15,7 @@ height = 24
 background = #a0000000
 foreground = #ccffffff
 
-line-color = ${bar/top.background}
+line-color = ${bar/polybar.background}
 line-size = 2
 spacing = 0
 padding-right = 2
