@@ -1,0 +1,2 @@
+#!/bin/sh
+tdrop -ma -w 100% -h 100% "krusader"
