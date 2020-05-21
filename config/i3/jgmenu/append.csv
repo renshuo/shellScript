@@ -6,9 +6,11 @@
 # submenu1,^checkout(1)
 ^sep()
 电源,^root(power)
+常用工具,^root(fav)
 
-^tag(1)
-item1.0
+
+^tag(fav)
+blueman-manager(蓝牙管理器),"""blueman-manager""",bluetooth manager
 item1.1
 
 
