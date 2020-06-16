@@ -202,22 +202,25 @@ exec --no-startup-id /home/bin/0bin/config/screenConfig.sh
 ## 自启动
 exec --no-startup-id fcitx 
 # exec --no-startup-id yakuake
-for_window [class="yakuake"] floating enable
+# for_window [class="yakuake"] floating enable
 exec --no-startup-id picom -b -c --config $HOME/.config/i3/picom.conf &
 exec --no-startup-id polybar -r -c $HOME/.config/i3/polybar/config polybar
 exec --no-startup-id jgmenu_run
-# exec --no-startup-id pasystray &
+# sys tray
+exec --no-startup-id pasystray &
+exec --no-startup-id nm-applet &
 # dunst for system notify
+exec --no-startup-id dunst &
 
+
+## tdrop config
 bindsym F1 exec --no-startup-id tdrop -ma -w -2 -x 2 -h 100% konsole --hide-menubar -e "tmux"
 bindsym F2 exec --no-startup-id source emacs.env && tdrop -ma -w -2 -x 2 -h 100% "emacs"
-bindsym F3 exec --no-startup-id tdrop -ma -w -2 -x 2 -h 100% "pcmanfm"
+bindsym F3 exec --no-startup-id tdrop -ma -w -2 -x 2 -h 100% "dolphin"
 bindsym F4 exec --no-startup-id tdrop hide_all
-# bindsym $mod+F1 exec --no-startup-id xrdb -load ~/.Xresourc1es && urxvt
-
 exec --no-startup-id tdrop -ma -w -2 -x 2 -h 100% konsole --hide-menubar -e "tmux" && tdrop hide_all
 exec --no-startup-id source emacs.env && tdrop -ma -w -2 -x 2 -h 100% "emacs" && tdrop hide_all
-exec --no-startup-id tdrop -ma -w -2 -x 2 -h 100% pcmanfm && tdrop hide_all
+exec --no-startup-id tdrop -ma -w -2 -x 2 -h 100% "dolphin" && tdrop hide_all
 
 ## 窗口定制
 for_window [class="Steam"] floating enable
@@ -228,3 +231,4 @@ for_window [title="fcitx"] floating enable
 for_window [class="kmenuedit"] floating enable
 for_window [class="kmenuedit"] move container to workspace number $ws2
 for_window [title="蓝牙设备"] floating enable
+for_window [title="Screen Layout Editor"] floating enable
