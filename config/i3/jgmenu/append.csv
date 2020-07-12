@@ -11,7 +11,7 @@
 
 ^tag(fav)
 blueman-manager(蓝牙管理器),"""blueman-manager""",bluetooth manager
-item1.1
+arandr(屏幕管理),"""arandr""",video-display
 
 
 ^tag(power)
