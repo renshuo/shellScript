@@ -30,9 +30,14 @@ modules-left = jgmenu i3 xwindow demo
 modules-center = 
 modules-right = powermenu pulseaudio backlight battery dateIcon date
 
-tray-position = right
-tray-padding = 1
-tray-maxsize=20
+tray-position = center
+tray-detached=false
+tray-padding = 3
+tray-maxsize=24
+tray-background=${colors.background}
+tray-offset-x = 450
+tray-offset-y = 0
+tray-scale=1
 
 enable-ipc = true
 

@@ -40,7 +40,8 @@ exec --no-startup-id sudo xbacklight -set 60
 floating_modifier $mod
 # Use Mouse+$mod to drag floating windows to their wanted position
 bindsym $mod+Escape kill
-bindsym $mod+z exec --no-startup-id rofi -show run
+bindsym $mod+z exec jgmenu
+bindsym $mod+c exec --no-startup-id rofi -show run
 bindsym $mod+Tab exec --no-startup-id rofi -show window
 bindsym Print exec spectacle -r
 bindsym $mod+Return exec konsole --hide-menubar
@@ -155,22 +156,39 @@ mode $resize_mode {
         bindsym $mod+r mode "default"
 }
 
-# Start i3bar to display a workspace bar (plus the system information i3status finds out, if available)
-# bar {
-#     # i3bar_command i3bar -t
-#     #status_command conky -c $HOME/.config/i3/conkyrc_bar
-#     # status_command polybar -c $HOME/.config/i3/polybar.conf
-#     status_command i3status
-#     strip_workspace_numbers yes
-#     separator_symbol " | "
-#     tray_output primary
-#     # mode hide
-#     colors {
-#         background #333333
-#         statusline #FFFFFF
-#         separator #3399FF
-#     }
-# }
+
+# # Start i3bar to display a workspace bar (plus the system information i3status finds out, if available)
+bar {
+    i3bar_command i3bar --transparency
+    #status_command conky -c $HOME/.config/i3/conkyrc_bar
+    # status_command polybar -c $HOME/.config/i3/polybar.conf
+    font pango:思源黑体 CN 12
+    status_command i3status
+    strip_workspace_numbers yes
+    separator_symbol " | "
+    tray_output eDP1
+    tray_padding 2
+    workspace_buttons yes
+    workspace_min_width 32
+    strip_workspace_numbers yes
+    strip_workspace_name yes
+    binding_mode_indicator yes
+
+    bindsym button1 exec jgmenu
+    bindsym button3 exec jgmenu
+    # mode hide
+    colors {
+        background #ffffff00
+        statusline #ffffffff
+        separator #3399FF
+        focused_background #ffffff00
+        focused_workspace  #4c7899 #285577 #ffffff
+        active_workspace   #333333 #5f676a #ffffff
+        inactive_workspace #333333 #222222 #888888
+        urgent_workspace   #2f343a #900000 #ffffff
+        binding_mode       #2f343a #900000 #ffffff
+    }
+}
 
 ## C+x mode
 set $xmode "xmode:(i)IDEA (f)firefox (g)chromium"
@@ -197,20 +215,22 @@ mode $gamemode {
 exec --no-startup-id feh --bg-scale "$HOME/.config/i3/background.png"
 
 # screen base config
-exec --no-startup-id /home/bin/0bin/config/screenConfig.sh
+# exec --no-startup-id /home/bin/0bin/config/screenConfig.sh
 
 ## 自启动
-exec --no-startup-id polybar -r -c $HOME/.config/i3/polybar/config polybar
+exec --no-startup-id $HOME/.config/i3/autostartup.sh &
+# exec --no-startup-id polybar -r -c $HOME/.config/i3/polybar/config polybar
 # exec --no-startup-id yakuake
 # exec --no-startup-id picom -b -c --config $HOME/.config/i3/picom.conf &
 # picom的阴影会影响kde程序
-exec --no-startup-id jgmenu_run
+# exec --no-startup-id jgmenu_run
 # sys tray
-exec --no-startup-id fcitx5 &
-exec --no-startup-id pasystray &
-exec --no-startup-id nm-applet &
-# dunst for system notify
-exec --no-startup-id dunst &
+# exec --no-startup-id fcitx5 &
+# exec --no-startup-id pasystray &
+# exec --no-startup-id nm-applet &
+# exec --no-startup-id blueman-applet &
+# # dunst for system notify
+# exec --no-startup-id dunst &
 
 bindsym F1 exec --no-startup-id tdrop -ma -h 100% konsole --hide-menubar -e "tmux"
 bindsym F2 exec --no-startup-id source emacs.env && tdrop -ma -h 100% "emacs"
@@ -223,6 +243,8 @@ exec --no-startup-id source emacs.env && tdrop -ma -w -2 -x 2 -h 100% "emacs" &&
 exec --no-startup-id tdrop -ma -h 100% "dolphin" && tdrop hide_all
 
 ## 窗口定制
+title_align center # title_align left|center|right
+bindsym --release button2 kill
 for_window [class="Steam"] floating enable
 for_window [class="ksysguard"] floating enable
 for_window [title="输入法配置"] floating enable
@@ -233,3 +255,4 @@ for_window [class="kmenuedit"] move container to workspace number $ws2
 for_window [title="蓝牙设备"] floating enable
 for_window [title="Screen Layout Editor"] floating enable
 for_window [class="yakuake"] floating enable
+
