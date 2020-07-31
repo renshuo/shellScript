@@ -9,7 +9,7 @@ laptopstart () {
   nm-applet &
   blueman-applet &
   dunst &
-  jgmenu_run &
+  # jgmenu_run &
   # polybar -r -c $HOME/.config/i3/polybar/config polybar &
   /home/bin/0bin/config/screenConfig.sh &
 }
