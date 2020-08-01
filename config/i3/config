@@ -247,14 +247,14 @@ exec --no-startup-id $HOME/.config/i3/autostartup.sh &
 # # dunst for system notify
 # exec --no-startup-id dunst &
 
-bindsym F1 exec --no-startup-id tdrop -ma -h 100% konsole --hide-menubar -e "tmux"
-bindsym F2 exec --no-startup-id source emacs.env && tdrop -ma -h 100% "emacs"
-bindsym F3 exec --no-startup-id tdrop -ma -h 100% "dolphin"
+bindsym F1 exec --no-startup-id tdrop -ma -h 100% -y 0 konsole --hide-menubar -e "tmux"
+bindsym F2 exec --no-startup-id source emacs.env && tdrop -ma -h 100% -y 0  "emacs"
+bindsym F3 exec --no-startup-id tdrop -ma -h 100% -y 0 "dolphin"
 bindsym F4 exec --no-startup-id tdrop hide_all
 # bindsym $mod+F1 exec --no-startup-id xrdb -load ~/.Xresourc1es && urxvt
 
 exec --no-startup-id tdrop -ma -h 100% konsole --hide-menubar -e "tmux" && tdrop hide_all
-exec --no-startup-id source emacs.env && tdrop -ma -w -2 -x 2 -h 100% "emacs" && tdrop hide_all
+exec --no-startup-id source emacs.env && tdrop -ma -h 100% "emacs" && tdrop hide_all
 exec --no-startup-id tdrop -ma -h 100% "dolphin" && tdrop hide_all
 
 ## 窗口定制
