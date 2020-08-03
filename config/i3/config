@@ -52,22 +52,25 @@ bindsym $mod+z exec jgmenu
 bindsym $mod+shift+z exec --no-startup-id xfce4-appfinder
 bindsym $mod+control+z exec --no-startup-id rofi -show run
 ## C+x mode
-set $xmode "xmode:(e)startemacs (i)IDEA (f)firefox (g)chromium"
+set $xmode "xmode: (e)startemacs (i)IDEA (f)firefox (g)chromium (d)dolphin"
 bindsym $mod+x mode $xmode
 mode $xmode {
      bindsym e mode "default"; exec startemacs
      bindsym i mode "default"; exec idea
      bindsym f mode "default"; exec firefox
      bindsym g mode "default"; exec chromium
+     bindsym d mode "default"; exec dolphin
      bindsym Escape mode "default"
      bindsym Return mode "default"
 }
 
-bindsym $mod+Tab exec --no-startup-id rofi -show window
+#bindsym $mod+Tab exec --no-startup-id rofi -show window
+bindsym $mod+Tab focus right
+# use focus right instead window switch by rofi
 bindsym Print exec spectacle -r
 bindsym $mod+Return exec konsole --hide-menubar
-bindsym Control+Escape exec ksysguard &
 bindsym $mod+Shift+Return exec --no-startup-id kdesu konsole --hode-menubar
+bindsym Control+Escape exec ksysguard &
 #bindsym $mod+Return exec konsole
 
 # alternatively, you can use the cursor keys:
