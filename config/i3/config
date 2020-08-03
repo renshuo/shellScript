@@ -177,7 +177,7 @@ bar {
     i3bar_command i3bar --transparency
     #status_command conky -c $HOME/.config/i3/conkyrc_bar
     # status_command polybar -c $HOME/.config/i3/polybar.conf
-    mode dock
+    mode hide
     hidden_state show
     modifier Mod4
     position bottom
