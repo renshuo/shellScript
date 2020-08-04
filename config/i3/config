@@ -178,7 +178,7 @@ bar {
     #status_command conky -c $HOME/.config/i3/conkyrc_bar
     # status_command polybar -c $HOME/.config/i3/polybar.conf
     mode hide
-    hidden_state show
+    hidden_state hide
     modifier Mod4
     position bottom
     font pango:思源黑体 CN 12
@@ -252,6 +252,7 @@ exec --no-startup-id tdrop -ma -h 100% "dolphin" && tdrop hide_all
 
 ## 窗口定制
 # popups
+# for_window [class=".*"] floating enable
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 
