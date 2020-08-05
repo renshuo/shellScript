@@ -12,7 +12,7 @@ export EDITOR="emacsclient "
 
 source $XBIN/gradle.env
 source $XBIN/jdk.env
-source $XBIN/config/fcitx.env
+source $XBIN/config/fcitx5.env
 source $XBIN/texlive.env
 
 #eval "$(fasd --init auto)"
