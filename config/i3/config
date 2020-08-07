@@ -184,7 +184,6 @@ bar {
     font pango:思源黑体 CN 12
     status_command i3status
     separator_symbol " | "
-    tray_output eDP1
     tray_padding 2
     workspace_buttons yes
     workspace_min_width 32
