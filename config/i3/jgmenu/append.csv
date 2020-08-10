@@ -12,7 +12,7 @@
 ^tag(fav)
 blueman-manager(蓝牙管理器),"""blueman-manager""",bluetooth manager
 arandr(屏幕管理),"""arandr""",video-display
-
+starteamcs(Emacs),"""/home/bin/0bin/startemacs""",emacs
 
 ^tag(power)
 关机,"""i3exit shutdown""",system-shutdown
