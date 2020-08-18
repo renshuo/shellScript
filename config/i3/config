@@ -177,6 +177,7 @@ bar {
     i3bar_command i3bar --transparency
     #status_command conky -c $HOME/.config/i3/conkyrc_bar
     # status_command polybar -c $HOME/.config/i3/polybar.conf
+    output DP-0
     mode hide
     hidden_state hide
     modifier Mod4
