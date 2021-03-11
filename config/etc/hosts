@@ -1,0 +1,28 @@
+127.0.0.1	localhost
+127.0.1.1	sren-pc
+::1	localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+10.0.0.2        yg2 yg2.com yg.com
+10.0.0.3        yg3 yg3.com
+10.0.0.4        yg4 yg4.com
+10.0.0.5	yg5 yg5.com
+10.0.0.6	yg6 yg6.com
+
+10.0.0.11	yga yga.com
+
+192.168.1.188   ql1 ql1.com
+
+192.168.31.170 pp0
+192.168.31.171 pp1
+192.168.31.172 pp2
+192.168.31.173 pp3
+
+192.168.130.140 x0
+192.168.130.142 x2
+
+10.0.0.199	zgy
+
+# 52.216.146.139 github-production-release-asset-2e65be.s3.amazonaws.com s3.amazonaws.com 
+151.101.76.133 raw.githubusercontent.com
