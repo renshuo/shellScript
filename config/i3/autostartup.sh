@@ -11,7 +11,7 @@ laptopstart () {
   dunst &
   # jgmenu_run &
   # polybar -r -c $HOME/.config/i3/polybar/config polybar &
-  /home/bin/0bin/config/screenConfig.sh &
+  /home/bin/0bin/screenConfig.sh &
   nutstore &
 }
 
