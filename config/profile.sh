@@ -15,7 +15,7 @@ source $XBIN/config/fcitx5.env
 
 source $XBIN/jdk.env
 source $XBIN/gradle.env
-#source $XBIN/scala.env
+source $XBIN/scala3.env
 source $XBIN/texlive.env
 source $XBIN/julia.env
 
