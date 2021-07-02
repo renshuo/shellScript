@@ -18,6 +18,7 @@ source $XBIN/gradle.env
 source $XBIN/scala3.env
 source $XBIN/texlive.env
 source $XBIN/julia.env
+source $XBIN/node.env
 
 #eval "$(fasd --init auto)"
 
